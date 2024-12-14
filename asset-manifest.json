@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/peluch17/static/css/main.1fb2d9a6.css",
+    "main.js": "/peluch17/static/js/main.1cdb92aa.js",
+    "static/js/488.89bd1331.chunk.js": "/peluch17/static/js/488.89bd1331.chunk.js",
+    "static/media/plchi.jpg": "/peluch17/static/media/plchi.2c92805bdfe94c07ef3e.jpg",
+    "index.html": "/peluch17/index.html",
+    "main.1fb2d9a6.css.map": "/peluch17/static/css/main.1fb2d9a6.css.map",
+    "main.1cdb92aa.js.map": "/peluch17/static/js/main.1cdb92aa.js.map",
+    "488.89bd1331.chunk.js.map": "/peluch17/static/js/488.89bd1331.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fb2d9a6.css",
+    "static/js/main.1cdb92aa.js"
+  ]
+}
