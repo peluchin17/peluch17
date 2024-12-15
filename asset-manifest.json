@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/peluch17/static/css/main.1fb2d9a6.css",
-    "main.js": "/peluch17/static/js/main.b9481a7d.js",
+    "main.css": "/peluch17/static/css/main.a08d1874.css",
+    "main.js": "/peluch17/static/js/main.6c07f18b.js",
     "static/js/488.89bd1331.chunk.js": "/peluch17/static/js/488.89bd1331.chunk.js",
-    "static/media/plchi.jpg": "/peluch17/static/media/plchi.2c92805bdfe94c07ef3e.jpg",
+    "static/media/peluchin.png": "/peluch17/static/media/peluchin.978b6bd7cceda9aae8b6.png",
     "index.html": "/peluch17/index.html",
-    "main.1fb2d9a6.css.map": "/peluch17/static/css/main.1fb2d9a6.css.map",
-    "main.b9481a7d.js.map": "/peluch17/static/js/main.b9481a7d.js.map",
+    "main.a08d1874.css.map": "/peluch17/static/css/main.a08d1874.css.map",
+    "main.6c07f18b.js.map": "/peluch17/static/js/main.6c07f18b.js.map",
     "488.89bd1331.chunk.js.map": "/peluch17/static/js/488.89bd1331.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fb2d9a6.css",
-    "static/js/main.b9481a7d.js"
+    "static/css/main.a08d1874.css",
+    "static/js/main.6c07f18b.js"
   ]
 }
