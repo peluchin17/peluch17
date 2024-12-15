@@ -9,7 +9,11 @@
     z-index: 1000;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 10px;
+}
+
+.logo_title {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .container {
@@ -82,12 +86,15 @@
 
 .mobile-item:hover {
     background-color: #000000;
+    color: #F4F4F4;
 }
+
 .mobile-menu-btn button {
     background: transparent;
     border: none;
     cursor: pointer;
 }
+
 /* En dispositivos móviles, muestra el ícono de hamburguesa */
 @media (max-width: 768px) {
     .desktop-menu {

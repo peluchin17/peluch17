@@ -15,9 +15,11 @@ const NavigationBar = () => {
         <nav className="navbar">
             <div className="container">
                 {/* Left Side: Title */}
-                <div className="title">
-                    <h1>PELUCHIN</h1>
-                </div>
+                <Link to="/" className="logo_title">
+                    <div className="title">
+                        <h1>PELUCHIN</h1>
+                    </div>
+                </Link>
 
                 {/* Desktop Menu */}
                 <div className={`desktop-menu ${isOpen ? 'open' : ''}`}>
@@ -25,7 +27,7 @@ const NavigationBar = () => {
                     <Link to="/about" className="menu-item">About</Link>
                     <Link to="/tokenomics" className="menu-item">Tokenomics</Link>
                     <Link to="/airdrop" className="menu-item">Airdrop</Link>
-                    <Link to="/admin" className="menu-item">Admin</Link>
+                    {/**<Link to="/admin" className="menu-item">Admin</Link> */}
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -55,7 +57,7 @@ const NavigationBar = () => {
                 <Link to="/about" className="mobile-item" onClick={toggleMenu}>About</Link>
                 <Link to="/tokenomics" className="mobile-item" onClick={toggleMenu}>Tokenomics</Link>
                 <Link to="/airdrop" className="mobile-item" onClick={toggleMenu}>Airdrop</Link>
-                <Link to="/admin" className="mobile-item" onClick={toggleMenu}>Admin</Link>
+                {/*<Link to="/admin" className="mobile-item" onClick={toggleMenu}>Admin</Link>*/}
             </div>
         </nav>
     );

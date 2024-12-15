@@ -1,0 +1,91 @@
+/* Estilos generales para la sección */
+.about-container {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 8%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 36px;
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-size: 28px;
+    color: #333;
+    margin-top: 20px;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.description strong {
+    color: #1a73e8;
+}
+
+/* Agregar un hover para los enlaces */
+.description a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para hacer que la tarjeta sea responsiva */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 10px;
+        margin-top: 20%;
+        max-width: 85%;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .sub-title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 15px;
+        margin-top: 3%;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}

@@ -1,20 +1,45 @@
-import React from 'react';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import TableCoins from "../components/TableCoins";
+import '../styles/Tokenomics.css';
 
-function Tokenomics() {
+const Tokenomics = ({ simbolo }) => {
+    const [coins, setCoins] = useState([]);
+    const [search, setSearch] = useState("");
+
+
+    const getData = async () => {
+        try {
+            const res = await axios.get(
+                "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
+            );
+            setCoins(res.data);
+            console.log(res.data);
+        } catch (error) {
+            console.error(error);
+        }
+    };
+    useEffect(() => {
+        getData();
+    }, []);
+
     return (
-        <div>
-            <h1>Tokenomics</h1>
-            <p><strong>Suministro Total:</strong> 1,000,000,000 PL</p>
-            <p><strong>Distribución:</strong></p>
-            <ul>
-                <li>50% para la comunidad y airdrops</li>
-                <li>20% para liquidez</li>
-                <li>20% para desarrollo y marketing</li>
-                <li>10% para equipo fundador</li>
-            </ul>
-            <p>Nuestro enfoque es maximizar el valor para los holders a largo plazo con estrategias de quema y recompensas.</p>
+        <div className="container">
+            <div className="row">
+                <div className="input_text">
+                    <input
+                        type="text"
+                        placeholder="Search a Coin"
+                        className="form-control bg-dark text-light border-0 mt-4 text-center"
+                        autoFocus
+                        onChange={(e) => setSearch(e.target.value)}
+                    />
+                </div>
+
+                <TableCoins coins={coins} search={search} />
+            </div>
         </div>
     );
-}
+};
 
 export default Tokenomics;

@@ -1,0 +1,167 @@
+/* Asegura que el contenedor principal ocupe toda la altura de la página y centre su contenido */
+.page {
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+
+    /* Ocupa toda la altura de la ventana */
+    background-color: #F9F9F9;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* Grid para la disposición de las cards */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Cards adaptables */
+    gap: 20px;
+    /* Espacio entre las cards */
+    justify-content: center;
+    justify-items: center;
+    /* Centra las cards en el contenedor */
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    /* Alinea las cards verticalmente */
+    margin-top: 10%;
+    height: 100%;
+}
+
+/* Card principal */
+.card-main {
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centrado de contenido */
+}
+
+/* Estilo de la imagen de la card */
+.card-image {
+    flex: 1;
+    min-width: 200px;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contenido de la card */
+.card-content {
+    flex: 2;
+    margin-left: 20px;
+}
+
+/* Estilos del título y descripción */
+.card-content h1 {
+    color: #341E07FF;
+}
+
+.card-content p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilo del contador de tiempo */
+.countdown {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #333;
+    background-color: #F3F4F6;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del título dentro del countdown */
+.countdown h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Estilo del párrafo dentro del countdown */
+.countdown p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    color: #555;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Enlaces de acción */
+.countdown .links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilo de los enlaces */
+.link {
+    padding: 12px 25px;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    border-radius: 8px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #4CAF50;
+}
+
+/* Hover y Active para los enlaces */
+.link:hover {
+    transform: scale(1.05);
+}
+
+.link:active {
+    transform: scale(1);
+}
+
+/* Responsividad adicional */
+@media (max-width: 768px) {
+    .card-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-image {
+        margin-bottom: 20px;
+    }
+
+    .card-content {
+        margin-left: 0;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 10%;
+        justify-content: space-between;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+    }
+    .countdown{
+        margin-top: 5%;
+    }
+}

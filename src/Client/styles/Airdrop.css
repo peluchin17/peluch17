@@ -1,0 +1,106 @@
+/* Estilos generales */
+.cont_airdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal */
+.airdrop-container {
+    text-align: center;
+    padding: 10px;
+    max-width: 500px;
+    /* Limita el ancho máximo en pantallas grandes */
+    width: 100%;
+    /* Se adapta al tamaño disponible */
+}
+
+/* Título */
+h1 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+/* Descripción */
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilos del formulario */
+form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo del input */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+/* Estilo del input al tener foco */
+input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Estilo del botón */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo del botón al pasar el mouse */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mensaje de confirmación */
+p.message {
+    font-size: 1.2rem;
+    color: #4caf50;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    p {
+        font-size: 1rem;
+        /* Ajusta el tamaño de la descripción */
+    }
+
+    .button {
+        font-size: 1rem;
+        /* Ajusta el tamaño del botón */
+    }
+}

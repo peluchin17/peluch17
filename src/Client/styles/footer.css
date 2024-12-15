@@ -1,0 +1,117 @@
+.footer {
+    background-color: #f7f8f9; /* Suave fondo pastel */
+    padding: 3rem;
+    text-align: center;
+    border-top: 2px solid #e0e0e0;
+    font-family: 'Consolas', monospace;
+    font-size: 1rem; /* Tamaño base para la tipografía */
+}
+
+.footer-title {
+    font-size: 2rem; /* Tamaño base para la cabecera */
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    font-size: 1.3rem;
+    color: #4a4a4a;
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.social-link:hover {
+    background-color: #d1d1d1;
+    color: #ffffff;
+}
+
+.twitter {
+    background-color: #a6e1fa; /* Azul suave */
+}
+
+.tiktok {
+    background-color: #d8f7c1; /* Verde menta */
+}
+
+.youtube {
+    background-color: #fce0b4; /* Amarillo pastel */
+}
+
+.buy-token {
+    margin-top: 2rem;
+}
+
+.buy-link {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #ff8c42; /* Naranja suave */
+    padding: 1rem 2.5rem;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buy-link:hover {
+    background-color: #ffb84d;
+}
+
+.footer-copy {
+    font-size: 1.1rem;
+    color: #7a7a7a;
+    margin-top: 2rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 1.6rem; /* Ajustamos el tamaño para pantallas medianas */
+    }
+
+    .social-link {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .buy-link {
+        font-size: 12px;
+        padding: 0.8rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 1.8rem;
+    }
+
+    .footer-title {
+        font-size: 1.4rem; /* Tamaño aún más pequeño para móviles */
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-link {
+        font-size: 1.1rem;
+        padding: 0.7rem 1.3rem;
+    }
+
+    .buy-link {
+        font-size: 12px;
+        padding: 0.8rem 1.5rem;
+    }
+}

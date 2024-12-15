@@ -1,0 +1,161 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* Ajusta el ancho máximo */
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 10px;
+}
+
+input.form-control {
+    border: none;
+    /* Quita el borde predeterminado */
+    border-bottom: 1px solid #000;
+    /* Aplica el borde inferior */
+    border-radius: 0;
+    /* Asegura que sea un campo rectangular */
+    padding: 10px 15px;
+    /* Espaciado interno */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    background-color: #fff;
+    /* Fondo blanco para mejor contraste */
+    color: #000;
+    /* Texto negro */
+    text-align: center;
+    /* Centra el texto */
+    outline: none;
+    /* Elimina el resalte azul al enfocar */
+    margin-top: 20px;
+    /* Espaciado superior */
+    transition: all 0.3s ease;
+    /* Suaviza las transiciones */
+}
+
+.input_text {
+    padding: 20px;
+}
+
+input.form-control:focus {
+    border-bottom: 1px solid #007bff;
+    /* Cambia el color del borde al enfocar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Añade una sombra al enfocar */
+}
+
+@media (max-width: 768px) {
+    .row {
+        margin-top: 15%;
+    }
+}
+
+/* Ajustes generales para que la tabla sea responsiva */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+thead tr {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+thead tr td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #444;
+}
+
+tbody tr td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+
+tbody tr td:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+tbody tr td img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.table-hover tbody tr:hover {
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    thead {
+        display: none;
+        /* Oculta el encabezado en pantallas pequeñas */
+    }
+
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+        /* Convierte las filas en columnas */
+        border-bottom: 1px solid #444;
+        /* Espaciado entre elementos */
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #2e2e2e;
+        /* Fondo más claro para filas */
+        border-radius: 8px;
+    }
+
+    tbody tr td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 10px;
+        font-size: 13px;
+        text-align: left;
+        border-bottom: 1px solid #333;
+        /* Línea entre celdas */
+    }
+
+    tbody tr td:last-child {
+        border-bottom: none;
+        /* Elimina la línea en la última celda */
+    }
+
+    tbody tr td:before {
+        content: attr(data-label);
+        /* Usa atributos personalizados para etiquetas */
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #007bff;
+        margin-right: 10px;
+    }
+
+    tbody tr td img {
+        margin-right: 10px;
+        /* Espaciado para imágenes */
+    }
+}
